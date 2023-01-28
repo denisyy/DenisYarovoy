@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Форма</title>
 </head>
 <body>
-    
+    <form action="#" method="post">
+        <label for="name">Повне імʼя</label>
+        <input type="text" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" name="email">
+        
+        <label for="password1">Пароль</label>
+        <input type="password" name="password1">
+
+        <label for="password2">Пароль ще раз</label>
+        <input type="password" name="password2">
+
+        <label for="gender">Стать</label>
+        <input type="radio" id="male" name="gender" value="Чоловіча">
+        <label for="male">Чоловік</label>
+        <input type="radio" id="female" name="gender" value="Жіноча">
+        <label for="female">Жінка</label>
+
+        <label for="age">Вік</label>
+        <input type="number" id="age" name="age">
+
+        <label for="course">Курс</label>
+        <select name="course" id="course">
+            <option value="1course">Front-End</option>
+            <option value="2course">Back-End</option>
+            <option value="3course">Project Management</option>
+            <option value="4course">QA Manual</option>
+        </select>
+
+        <label for="address">Повна адреса</label>
+        <textarea name="address" id="address" cols="30" rows="3" placeholder="Країна, регіон, місто/селище, вулиця."></textarea>
+
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement">Я погоджуюсь з обробкою персональних даних</label>
+
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+    </form>
 </body>
 </html>
