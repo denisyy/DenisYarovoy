@@ -1,3 +1,5 @@
+*{transition: all .1s ease-in;}
+
 body {
     font-family: 'Roboto';
     background-color: #3B3F45;
