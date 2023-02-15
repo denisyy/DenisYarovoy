@@ -1,9 +1,16 @@
 .header__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     max-width: 1200px;
     height: 54px;
     margin: 0 auto;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+
 }
 
 .header__language{
@@ -14,7 +21,7 @@
     line-height: 18px;
     text-align: center;
     letter-spacing: 0.04em;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 
 .navigation--list {
@@ -36,7 +43,7 @@
 }
 
 .navigation__logo {
-    margin-left: 590px;
+
 }
 
 .main__wrapper {
