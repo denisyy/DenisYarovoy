@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lesson 15</title>
+</head>
+<body>
+    <section class="sign-in">
+        <h1>Create an Account</h1>
+        <form>
+            <div class="sign-in__group">
+                <label class="sign-in__label">
+                    First Name
+                    <input type="text" class="sign-in__input-name">
+                </label>
+                
+                <label class="sign-in__label">
+                    Last Name
+                    <input type="text" class="sign-in__input-name">
+                </label>
+            </div>
+            
+            <label class="sign-in__label">
+                E-mail
+                <input type="text" class="sign-in__input-text">
+                <p class="sign-in__label-hint">We'll never share your email with anyone else.</p>
+            </label>
+            
+            <div class="sign-in__radio">
+                <label class="sign-in__label__radio">
+                    <input type="radio" name="gender" value="male">
+                    <div class="sign-in__radio-button">
+                        <span class="sign-in__radio-button__checkmark"></span>
+                    </div>
+                    Male
+                </label>
+                
+                <label class="sign-in__label__radio">
+                    <input type="radio" name="gender" value="female">
+                    <div class="sign-in__radio-button">
+                        <span class="sign-in__radio-button__checkmark"></span>
+                    </div>  
+                    Female
+                </label>
+            </div>
+            
+            <div class="sign-in__group">
+                <label class="sign-in__label">
+                    Country
+                    <select name="sign-in__country-list" class="sign-in__country-list">
+                        <option value="ukraine">Ukraine</option>
+                        <option value="poland">Poland</option>
+                        <option value="spain">Spain</option>
+                        <option value="germany">Germany</option>
+                        <option value="italy">Italy</option>
+                    </select>
+                </label>
+                
+                <label class="sign-in__label">
+                    City
+                    <input type="text" class="sign-in__input-name">
+                </label>
+            </div>
+            
+            <button type="submit">
+                Sign Up
+            </button>
+        </form>
+        
+        <p class="sign-in__hint">
+            By clicking the 'Sign Up' button, you confirm that you accept our <br> <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+        </p>
+        
+        <div class="delimiter"></div>
+        
+        <div class="sign-in__option">
+            <p>Have an account?</p>
+            <a href="#">Log In</a>
+        </div>
+        
+    </section>
+    </body>
+    </html>
