@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400&family=Francois+One&family=PT+Sans:wght@400;700&family=Staatliches&family=Tourney&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Position transform</title>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="header__wrapper">
+            <div class="header__container">
+                <h3 class="header__language">ENG</h3>
+                <nav class="header__navigation">
+                    <ul class="navigation--list">
+                        <li class="navigation--list-item">
+                            <a href="#" class="navigation--list-link">Documentation</a>
+                        </li>
+                        <li class="header__navigation--list-item">
+                            <a href="#" class="navigation--list-link">/</a>
+                        </li>
+                        <li class="header__navigation--list-item">
+                            <a href="#" class="navigation--list-link">Who's using</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="assets/icons/company-logo-black.svg" alt="company-logo" class="navigation__logo">
+        </div>
+
+    </header>
+    
+    <main class="main">
+        <!--це ще не до кінця дороблено, але ви можете сказати помилки щоб мені потім було простіше доверстати, дякую!-->
+        <img src="assets/images/bg-picture.svg" alt="bg-picture" class="background-pic">
+        <aside class="sidebar">
+            <nav class="sidebar-menu">
+                <ul>
+                    <li class="sidebar-menu__item">
+                        <a href="#introduction" class="sidebar-menu__link">introduction</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#core" class="sidebar-menu__link">core components</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#react" class="sidebar-menu__link">react fundamentals</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <a href="#handling" class="sidebar-menu__link">handling text input</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <div class="main__wrapper">
+            
+                <div class="main__content" id="introduction">
+                    <div class="main__title">
+                        <div class="divider"></div>
+                        <h2 class="main__title--name">Introduction</h2>
+                        <p class="main__title--chapter">Chapter 1</p>
+                    </div>
+                    <p class="main__text">
+                        Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to <span class="text__add">their own section</span>. Continue reading for an introduction to the documentation, Native Components, React, and more!
+                    </p>
+                </div>
+
+                <div class="main__content" id="core">
+                    <div class="main__title">
+                        <div class="divider"></div>
+                        <h2 class="main__title--name">core components</h2>
+                        <p class="main__title--chapter">Chapter 2</p>
+                    </div>
+                    <p class="main__text">
+                        React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well as to describe the appearance and behavior of your UI using React components: <span class="text__add-second">bundles of reusable, nestable code.</span> You can learn more about React in the next section. But first, let’s cover how components work in React Native.
+                    </p>
+                </div>
+
+                <div class="main__content" id="react">
+                    <div class="main__title">
+                        <div class="divider"></div>
+                        <h2 class="main__title--name">react fundamentals</h2>
+                        <p class="main__title--chapter">Chapter 3</p>
+                    </div>
+                    <p class="main__text">
+                        React Native runs on React, a popular open source library for building user interfaces with JavaScript. To make the most of React Native, it helps to understand React itself. This section can get you started or can serve as a refresher course.
+                    </p>
+                    <p class="main__text">
+                        We’re going to cover the core concepts behind React:
+                    </p>
+                    <ul class="main__list">
+                        <li class="main__list-item">
+                            <span class="main__list-item-add">components.</span> The rest of this introduction to React uses cats in its examples: friendly, approachable creatures that need names and a cafe to work in.
+                        </li>
+                        <li class="main__list-item">
+                            <span class="main__list-item-add">JSX.</span> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like so: <span class="text__add-third">&lt;Text&gt; Hello, I am your cat!. &lt;/Text&gt;</span>
+                        </li>
+                    </ul>
+                    <p class="main__text">
+                        The React docs have <span class="text__add">a comprehensive guide to JSX you can refer to learn even more</span>. Because JSX is JavaScript, you can use variables inside it. Here you are declaring a <span class="text__add-third">name</span> for the cat, name, and embedding it with curly braces inside <span class="text__add-third"> &lt;Text&gt</span>
+                    </p>
+                    <ul class="main__list">
+                        <li class="main__list-item">
+                            <span class="main__list-item-add">props.</span> Props is short for “properties”. 
+                        </li>
+                        <li class="main__list-item">
+                            <span class="main__list-item-add">state.</span> While you can think of props as arguments you use to configure how components render, state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main__content" id="handling">
+                    <div class="main__title">
+                        <div class="divider"></div>
+                        <h2 class="main__title--name">handling text input</h2>
+                        <p class="main__title--chapter">Chapter 4</p>
+                    </div>
+                    <p class="main__text">
+                        TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a function to be called when the text is submitted.
+                    </p>
+                    <p class="main__text">
+                        For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way: &#127829;. So the sentence "Hello there Bob" would be translated as "&#127829; &#127829;".
+                    </p>
+                </div>
+                
+
+            </div>
+        </main>
+</body>
+</html>
